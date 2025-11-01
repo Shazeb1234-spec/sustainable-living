@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { SidebarTrigger } from "@/components/ui/sidebar"
 import { UnderGuidanceOf } from "./UnderGuidanceOf"
+import { ModeToggle } from "./mode-toggle"
 
 export function SiteHeader() {
   return (
@@ -12,7 +13,7 @@ export function SiteHeader() {
           orientation="vertical"
           className="mx-2 data-[orientation=vertical]:h-4"
         />
-        <h1 className="text-base font-medium">My Profile</h1>
+        <h1 className="text-base font-medium">Sustainable Living Project</h1>
         <div className="ml-auto flex items-center gap-2">
           <UnderGuidanceOf />
           <Button variant="ghost" asChild size="sm" className="hidden sm:flex">
@@ -25,6 +26,7 @@ export function SiteHeader() {
               GitHub
             </a>
           </Button>
+          <ModeToggle />
         </div>
 
       </div>
