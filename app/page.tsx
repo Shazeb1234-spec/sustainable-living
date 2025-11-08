@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import { cn } from "@/lib/utils"
 import { Slider } from "@/components/ui/slider"
@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Goal from "@/components/goal";
 
 
 export default function Home() {
@@ -96,7 +97,7 @@ export default function Home() {
           </CardHeader>
           <CardContent>
             <p>
-             If you don't if a gas powered car every day, consider alternatives with lower emissions if they are available to you. For example, try walking, riding a bike, taking public transportation, carpooling or investing in a electric or hybrid car when you need a deal one. Additionally, ready environmentalists have given up in flying planes such as Jetta Sunbird. I met her footprint, so conditors considered traveling by train instead of by air if possible
+              If you don't if a gas powered car every day, consider alternatives with lower emissions if they are available to you. For example, try walking, riding a bike, taking public transportation, carpooling or investing in a electric or hybrid car when you need a deal one. Additionally, ready environmentalists have given up in flying planes such as Jetta Sunbird. I met her footprint, so conditors considered traveling by train instead of by air if possible
             </p>
           </CardContent>
         </Card>
@@ -107,7 +108,7 @@ export default function Home() {
           </CardHeader>
           <CardContent>
             <p>
-             It was sustainable. Farmer shopping is not to shop at all and the second was a stable farm and more realistic form of shopping is shopping 2nd hand. Before buying anything video check out your local thrift store websites and apps like Posh Line, craigslist or eBay or your local buy. I think group on Facebook when it comes to items that you can buy secondhand companies that make products from natural or recycled materials while following sustainable business practices.
+              It was sustainable. Farmer shopping is not to shop at all and the second was a stable farm and more realistic form of shopping is shopping 2nd hand. Before buying anything video check out your local thrift store websites and apps like Posh Line, craigslist or eBay or your local buy. I think group on Facebook when it comes to items that you can buy secondhand companies that make products from natural or recycled materials while following sustainable business practices.
             </p>
           </CardContent>
         </Card>
@@ -154,6 +155,28 @@ export default function Home() {
           <li>Preserve Food:  did you know that preserving food by pickling drying or bottling is better than freezing in a refrigerator. Why? Because it uses less energy than the refrigerator.</li>
         </CardContent>
 
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>LEAVE NO ONE BEHIND!</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <Image src={"/peoplestand.jpg"} alt="people" width={300} height={500} />
+          <CardDescription>
+            The Sustainable Development Goals are the blueprint to achieve a better and more sustainable future for all. They address the global challenges we face,
+            including poverty, inequality, climate change, environmental degradation, peace and justice. Learn more and take action.
+          </CardDescription>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>The 17 Goals</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <Goal />
+        </CardContent>
       </Card>
 
     </div>
