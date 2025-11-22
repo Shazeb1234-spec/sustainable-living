@@ -13,6 +13,20 @@ import Goal from "@/components/goal";
 
 
 export default function Home() {
+  const goals = [
+    {
+      "title": "1. No Poverty",
+      "description": "End poverty in all its form.",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 1"
+    },
+    {
+      "title": "2. Zero Hunger",
+      "description": "The food and agriculture sector offers key solutions for development, and is central for hunger and poverty eradication.",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 2"
+    }
+  ]
   return (
     <div className="w-full overflow-x-hidden px-4">
 
@@ -175,7 +189,15 @@ export default function Home() {
           <CardTitle>The 17 Goals</CardTitle>
         </CardHeader>
         <CardContent>
-          <Goal />
+          {
+            goals.map((goal) => {
+              return (
+                <Goal title={goal.title} description={goal.description} imageUrl={goal.ImageUrl} imageAlt={goal.ImageAlt} />
+              )
+            }
+
+            )
+          }
         </CardContent>
       </Card>
 
