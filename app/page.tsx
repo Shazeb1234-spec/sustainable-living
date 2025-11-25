@@ -14,18 +14,111 @@ import Goal from "@/components/goal";
 
 export default function Home() {
   const goals = [
+
     {
       "title": "1. No Poverty",
       "description": "End poverty in all its form.",
-      "ImageUrl": "/nature.jpg",
+      "ImageUrl": "/G1.jpg",
       "ImageAlt": "Goal 1"
     },
     {
       "title": "2. Zero Hunger",
       "description": "The food and agriculture sector offers key solutions for development, and is central for hunger and poverty eradication.",
-      "ImageUrl": "/nature.jpg",
+      "ImageUrl": "/G2.jpg",
       "ImageAlt": "Goal 2"
-    }
+    },
+    {
+      "title": "3. Good Health and Well-Being",
+      "description": "Ensuring healthy lives and promoting the well- being for all at all ages is essential to sustainable development.",
+      "ImageUrl": "/G3.jpg",
+      "ImageAlt": "Goal 3"
+    },
+    {
+      "title": "4. Quality Education",
+      "description": "Obtaining a quality education is the foundation to improving people's lives and sustainable development.",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 4"
+    },
+    {
+      "title": "5. Gender Equality",
+      "description": "Gender equality is not only a fundamental human right, but a necessary foundation for a peaceful, prosperous and sustainable world.",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 5"
+    },
+    {
+      "title": "6. Clean Water and Sanitation",
+      "description": "Clean, accessible water for all is an essential part of the world we want to live in.",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 6"
+    },
+    {
+      "title": "7. Affordable and Clean Energy",
+      "description": "Energy is central to nearly every major challenge and opportunity.",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 7"
+    },
+    {
+      "title": "8. Decent Work and Economic Growth",
+      "description": "Sustainable economic growth will require societies to create the conditions that allow people to have quality jobs.",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 8"
+    },
+    {
+      "title": "9. Industry, Innovattion and Infrastructure",
+      "description": "Sustainable economic growth will require societies to create the conditions that allow people to have quality jobs.",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 9"
+    },
+    {
+      "title": "10. Reduced IneQualities",
+      "description": "Investments in are crucial to achieving sustainable development.",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 10"
+    },
+
+    {
+      "title": "11. Sustainable Cities and Communities",
+      "description": "There needs to be a future in which cities provide opportunities for all, with access to basic services, energy, housing, transportation and more.",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 11"
+    },
+    {
+      "title": "12. Responsible Consumption and Production",
+      "description": "Responsible Production and Consumption",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 12"
+    },
+
+    {
+      "title": "13. Climate Action",
+      "description": "Climate change is a global challenge that affects everyone, everywhere",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 13"
+    },
+    {
+      "title": "14. Life Below Water",
+      "description": " Careful management of this essential global resource is a key feature of a sustainable future",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 14"
+    },
+       {
+      "title": "15. Life On Land",
+      "description": " Sustainably managed forest combat Desertification halt and rivers land degradation Heat. Biodiversity loss.",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 15"
+    },
+          {
+      "title": "16. Peace, Justice and Strong Institutions",
+      "description": " Access to justice for all and building effective, accountable institutions at all levels",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 16"
+    },
+             {
+      "title": "17. Partnerships For The Goals",
+      "description": " Revitalize the Global Partnership for a Sustainable Development.",
+      "ImageUrl": "/nature.jpg",
+      "ImageAlt": "Goal 17"
+    },
   ]
   return (
     <div className="w-full overflow-x-hidden px-4">
@@ -189,15 +282,17 @@ export default function Home() {
           <CardTitle>The 17 Goals</CardTitle>
         </CardHeader>
         <CardContent>
-          {
-            goals.map((goal) => {
-              return (
-                <Goal title={goal.title} description={goal.description} imageUrl={goal.ImageUrl} imageAlt={goal.ImageAlt} />
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-1">
+            {
+              goals.map((goal) => {
+                return (
+                  <Goal key={goal.title} title={goal.title} description={goal.description} imageUrl={goal.ImageUrl} imageAlt={goal.ImageAlt} />
+                )
+              }
+
               )
             }
-
-            )
-          }
+          </div>
         </CardContent>
       </Card>
 
